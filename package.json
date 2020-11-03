@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-stv-smartm-gpio",
+  "description": "Preconfigured nodes for the STV Smart Manager",
+  "version": "0.0.1",
+  "license": "MIT License",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@port0.stv-electronic.de:33333/node-red-contrib-stv-smartm-gpio.git"
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "keywords": [
+    "stv",
+    "button",
+    "led",
+    "gpio"
+  ],
+  "node-red": {
+    "nodes": {
+      "StatusLED": "stv/statusLED.js",
+      "ErrorLED": "stv/errorLED.js",
+      "ButtonONOFF": "stv/buttonONOFF.js",
+      "ButtonService": "stv/buttonService.js"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('error-led',{
+        category: 'Smart Manager',
+        color: '#fcfafa',
+        defaults: {
+            initialstate: { value:"undefined"},
+            name: {value:"error led"},
+            topic: {value:""}
+        },
+        inputs:1,
+        icon: "SmartManager.png",
+        align: 'right',
+        label: function() {
+            return this.name||"error led";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="error-led">
+    <div class="form-row">
+        <label for="node-input-initialstate"><i class="icon-tag"></i>Initial state</label>
+        <select type="text" id="node-input-initialstate" placeholder="initialstate">
+            <option value="undefined" >undefined</option>
+            <option value="off">off</option>
+            <option value="on">on</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-tag"></i>Topic</label>
+        <input type="text" id="node-input-topic" placeholder="topic">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="error led">
+   <p>A node that represents the error led of the STV Smart Manager</p>
+    <ol>
+        <li> </li>
+        <li> </li>
+    </ol>
+</script>
