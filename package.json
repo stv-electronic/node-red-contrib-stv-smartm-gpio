@@ -5,7 +5,7 @@
   "license": "MIT License",
   "repository": {
     "type": "git",
-    "url": "ssh://git@port0.stv-electronic.de:33333/node-red-contrib-stv-smartm-gpio.git"
+    "url": "https://github.com/stv-electronic/node-red-contrib-stv-smartm-gpio.git"
   },
   "dependencies": {},
   "deprecated": false,
