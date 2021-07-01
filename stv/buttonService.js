@@ -92,3 +92,4 @@ module.exports = function(RED) {
     }
 RED.nodes.registerType("service-button",stv);
 };
+
