@@ -16,7 +16,7 @@ module.exports = function(RED) {
         RED.log.warn("error-led : "+RED._("error-led.errors.ignorenode"));
     }
     if (RED.settings.verbose) 
-       log.info("STV error-led")
+       RED.log.info("STV error-led")
     // the magic to make python print stuff immediately
     process.env.PYTHONUNBUFFERED = 1;
     function stv(config) {

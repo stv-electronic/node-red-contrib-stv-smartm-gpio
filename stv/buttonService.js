@@ -16,7 +16,7 @@ module.exports = function(RED) {
         RED.log.warn("service-button : "+RED._("service-button.errors.ignorenode"));
     }
     if (RED.settings.verbose) 
-       log.info("STV service-button")
+       RED.log.info("STV service-button")
     // the magic to make python print stuff immediately
     process.env.PYTHONUNBUFFERED = 1;
     function stv(config) {
